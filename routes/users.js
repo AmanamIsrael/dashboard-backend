@@ -6,6 +6,7 @@ router.get('/', verify, (req, res) => {
     user.find({}).then((users) => {
         // delete vital information
         res.send(users);
+        // restructure response
     })
 })
 
